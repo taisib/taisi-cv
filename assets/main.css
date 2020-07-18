@@ -1,0 +1,271 @@
+/**
+ * Taisib
+ */
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+  color: #333;
+  font-weight: 300;
+}
+
+ul {
+  margin-top: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  margin-top: 1.25rem;
+  margin-bottom: 2.25rem;
+  border: none;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+
+/* Resume */
+.resume {
+  padding: 1rem;
+}
+
+@media (min-width: 50rem) {
+  .resume {
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+}
+
+
+/* Header */
+.header {
+  margin-bottom: .75rem;
+  padding-top: 1rem;
+}
+
+.brand {
+    text-transform: uppercase;
+}
+
+.brand h1 {
+  max-width: 12rem;
+  margin-top: .25em;
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.brand h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.contact {
+  text-align: right;
+}
+
+.contact p {
+  color: #333;
+}
+
+.contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* Grid */
+@media (min-width: 60rem), print {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-half {
+    flex-basis: 48%;
+    flex-grow: 0;
+  }
+
+  .col-two-third {
+    flex-basis: 70%;
+    flex-grow: 0;
+  }
+
+  .col-one-third {
+    flex-basis: 20%;
+    flex-grow: 0;
+  }
+}
+
+
+/* Entry */
+.entry h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.entry h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .05rem;
+}
+
+.entry li {
+  font-size: .9rem;
+}
+
+.subtitle-info {
+  font-style: italic;
+  font-weight: 300;
+  color: #7f8c8d;
+}
+
+.local {
+  margin-bottom: 0;
+  font-size: .9rem;
+  color: #333;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.item:last-of-type {
+  margin-bottom: 0;
+}
+
+.item + h2 {
+  margin-top: 1rem;
+}
+
+
+/* Social */
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: .75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social a {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  height: 24px;
+  text-decoration: none;
+  line-height: 24px;
+  color: #333;
+}
+
+.social .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* Skills */
+.skills {
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  display: inline-block;
+}
+
+.skills li:after {
+  content: ",";
+}
+
+.skills li:last-of-type:after {
+  content: "";
+}
+
+
+/* Helpers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/**
+ * Print styles
+ */
+@page {
+  size: Letter;
+  margin: .3cm 1cm;
+}
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .item {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills h3 {
+    margin-bottom: .75rem;
+  }
+
+  .resume {
+    padding-bottom: 0;
+  }
+
+  .social {
+    display: none;
+  }
+
+  abbr[title],
+  acronym[title] {
+    text-decoration: none;
+  }
+}
